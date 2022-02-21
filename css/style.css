@@ -49,6 +49,15 @@ body {
   background-color: transparent;
   display: none;
 } 
+.header__nav{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.header__list{
+  display: flex;
+  flex-direction: row;
+}
 /* HEADER END  */
 /* HERO SECTION START */
 
@@ -155,8 +164,7 @@ body {
 .collection__list{
   list-style: none;
 }
-.collection__item {
-}
+
 .collection__desc {
 
 }
@@ -305,6 +313,7 @@ body {
   .container{
     width: 90%;
   }
+
   .header__logo{
     z-index: 1000;
   }
@@ -350,8 +359,218 @@ body {
     position: relative;
     right: 0px;
   }
+  .collection__item {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  }
+
+}
+.work{
+  /* margin-bottom: 200px; */
+}
+.work__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 80px;
+}
+.work__img {
+  margin-bottom: 80px;
+}
+.work__list{
+  list-style: none;
+  margin-bottom: 64px;
+}
+.work__item{
+  height: 355px;
+}
+.work__number {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 38px;
+  display: inline-block;
+}
+.work__coffee {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  font-family: 'Fraunces', sans-serif;
+  width: 255px;
+  margin-bottom: 43px;
+}
+.work__text {
+  line-height: 26px;
+  color: #333d4b;
+  margin-bottom: 64px;
+}
+.work__link{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Fraunces', sans-serif;
+  background: #0e8784;
+  padding: 15px 31px;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+.work__link:hover{
+  background: #66d2cf;
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .work{
+    /* padding-top: 400px; */
+  }
+  .work__img{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 800px) {
+  .work{
+    /* padding-top: 900px; */
+    padding-bottom: 100px;
+  }
 }
 
+@media screen and (max-width: 1000px) {
+  .work__link{
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  .work__list{
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .work__item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .work__link{
+    position: absolute;
+    bottom: 0;
+  }
+  .work__title{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+
+
+.site-footer{
+    padding: 200px 0 88px;
+}
+
+.footer-inner{
+    background: #2c343e;
+    padding: 47px 85px;
+}
+
+.footer__logo-box{
+    margin-right: 103px;
+}
+
+.footer__nav{
+    flex-grow: 1;
+}
+
+.footer__list{
+    list-style: none;
+    margin: 0;
+}
+
+.footer__item:not(:last-child){
+    margin-right: 33px;
+}
+
+.footer__link{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+    text-decoration: none;
+}
+
+.footer__nav .footer__item:hover .footer__link{
+    color: #fefcf7;
+}
+
+.social{
+    list-style: none;
+    margin: 0;
+}
+
+.social__link{
+    text-decoration: none;
+}
+
+.social__link .bx{
+    font-size: 25px;
+    color: #fefcf7;
+    transition: all 0.4s ease;
+}
+
+.social__item:not(:first-child){
+    margin-left: 24px;
+}
+
+.social__item:hover .social__link .bx{
+    color: #fdd6ba;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    .footer-inner{
+        flex-direction: column;
+    }
+
+    .footer__logo-box{
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+    .footer__item{
+      margin-bottom: 24px;
+    }
+
+    .footer__nav{
+        margin-bottom: 65px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    .footer__nav .footer__list{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .work{
+      margin-bottom: 0;
+    }
+    .footer__item{
+        margin-right: 0 !important;
+        margin-bottom: 30px;
+    }
+}
 
 .show{
   top: 0%;
